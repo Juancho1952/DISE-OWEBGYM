@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    background-image: url("/imagenes/bg.avif");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #d4b4af49;
+    padding: 15px;
+    gap: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    width: 10%;
+}
+
+.logo {
+    width: 80%;
+    padding: 0px;
+    border-radius: 40px;
+    text-align: center;
+
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 10%; /* Los ítems se expanden horizontalmente */
+}
+
+.sidebar nav ul li {
+    margin: 0; /* Eliminamos margen adicional */
+    text-align: center; /* Centra el texto */
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 28px; /* Tamaño de texto más grande */
+    display: block; /* Asegura que el área de clic sea amplia */
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #c29590; /* Color de fondo al pasar el mouse */
+    border-radius: 30px;
+}
+
+/* Slider, Testimonials, and Contact Container */
+.slider-testimonials-contact-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr; /* Slider ocupa menos espacio, testimonios/contacto más */
+}
+
+/* Testimonials and Contact Container */
+.testimonials-contact-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.testimonials, .contact {
+    background-color: #d4b4af49;
+    padding: 20px;
+    width: 48%;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.testimonials h3 {
+    margin-bottom: 20px;
+}
+
+
+.testimonials .testimonial .icon {
+    font-size: 24px;
+    color: #555;
+}
+
+.testimonials p {
+    font-size: 14px;
+    margin: 0;
+}
+/* Contact Section */
+.contact {
+    background-color: #d4b4af49;
+    border-radius: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact h3 {
+    margin-bottom: 50px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slider-testimonials-contact-container {
+        grid-template-columns: 1fr; /* Se apilan verticalmente */
+    }
+
+    .testimonials-contact-container {
+        grid-template-rows: 1fr; /* Testimonios y Contacto también se apilan */
+    }
+}
+
+
+
+/* Slider, Testimonials, and Contact Container */
+.slider-testimonials-contact-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 3fr; /* Slider ocupa menos espacio, testimonios/contacto más */
+    gap: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+.slider img.active {
+    display: block;
+}
+
+.slider .arrow {
+    background-color: #d4b4af;
+    border: none;
+    padding: 10px;
+    color: #a10909;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #d4b4af3d;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.hero button {
+    background-color: #d4b4af;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Classes Section */
+.classes {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d4b4af3d;
+    padding: 80px 0px;
+}
+
+.card {
+    background-color: #ffffff6c;
+    text-align: center;
+    border-radius: 16px;
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+.card .icon {
+    font-size: 60px;
+    margin: 5px 0;
+}
+
+.card button {
+    background-color: #d4b4af;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
