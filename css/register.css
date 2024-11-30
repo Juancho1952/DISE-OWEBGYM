@@ -79,7 +79,7 @@ a {
 .return-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #296ca7; /* Gris elegante */
+    background-color: #296ca7;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -90,7 +90,7 @@ a {
 }
 
 .return-button:hover {
-    background-color: #5a6268; /* Gris más oscuro */
+    background-color: #5a6268;
     transform: scale(1.05); /* Pequeño aumento al pasar el cursor */
     text-decoration: none; /* Asegura que no aparezcan subrayados */
 }
